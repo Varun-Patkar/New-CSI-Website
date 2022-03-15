@@ -9,6 +9,8 @@ https://docs.djangoproject.com/en/3.2/howto/deployment/wsgi/
 
 from django.core.wsgi import get_wsgi_application
 import os
+import django.core.handlers.wsgi
+_application = django.core.handlers.wsgi.WSGIHandler()
 os.environ.setdefault("DJANGO_SETTINGS_MODULE",
                       "CSI-SFIT-Website-21-22.settings")
 
